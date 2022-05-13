@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panilha de cálculos</title>
+</head>
+
+    <style>
+    table {
+       width: 45%;
+      margin-bottom: .5em;
+      table-layout:fixed;
+      text-align: center;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  
+}
+
+tr:hover {background-color: coral;}
+     
+   </style>
+    <body>
+      <center>
+      <marquee behavior="alternate"><h2>planilha de cálculos</h2></marquee>
+      
+     <table>
+      <div>
+        <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Valor</th>
+        <tr>
+           <th scope="col" colspan="3">RECEITAS</th> 
+        </tr>
+     
+      <tbody>
+    <tr> 
+        <th scope="col">1</th>
+        <td>valor base(R$)</td>
+        <td><input type="number" id="n1" form="formulario" nome="n1"></td>
+      </tr>
+      <tr>
+        <th scope="col">2</th>
+        <td>ajuda com transporte(R$)</td>
+        <td><input type="number" id="n2" form="formulario" nome="n2"></td>
+        </tr>
+       <tr>
+        <th scope="col">3</th>
+           <td>ajuda alimentação(R$)</td>
+           <td><input type="number" id="n3" form="formulario" nome="n3"></td>
+       </tr>
+       <tr>
+        <th scope="col">4</th>
+        <td>Receita total(R$)</td>
+        <td><input type="number" id="n4" form="formulario" nome="n4" disabled></td>
+       </tr>
+       <tr>
+        <th scope="col" colspan="3">DESCONTOS</th> 
+     </tr>
+     <tr> 
+      <th scope="col">5</th>
+        <td>desconto de automóvel(R$)</td>
+        <td><input type="number" id="n5" form="formulario" nome="n5"></td>
+      </tr>
+      <tr> 
+        <th scope="col">6</th>
+        <td>faltas(R$)</td>
+        <td><input type="number" id="n6" form="formulario" nome="n6"></td>
+      </tr>
+      <tr> 
+        <th scope="col">7</th>
+        <td>descontos total(R$)</td>
+        <td><input type="number" id="n7" form="formulario" nome="n7" disabled></td>
+      </tr>
+      <tr>
+        <th scope="col" colspan="3">TOTAL</th> 
+     </tr>
+     <tr> 
+      <th scope="col">8</th>
+        <td>total(R$)</td>
+        <td><input type="number" id="n8" form="formulario" nome="n8" disabled></td>
+      </tr>
+     
+    </div>
+    </table>
+   
+   
+    
+  
+  </thead>
+  <form id="formulario" action="formulario">
+    <button type="submit" id="soma">somar</button>
+    <input type="reset" id="apagar" value="limpar">
+  </form>
+  </center>
+  <script src="index.js"></script>
+    </body>
+    </html>
+    
